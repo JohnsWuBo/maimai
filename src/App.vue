@@ -24,13 +24,13 @@
 		methods: {
 			//导航请求
 			_shuju() {
-				this.$.get('./../static/feilei.json').then(function(a) {
+				this.$.get('/api/feilei.json').then(function(a) {
 					this.Datas = a.data;
 				}.bind(this))
 			},
 			//特价请求
 			_tejia(){
-				this.$.get('./../static/tejia.json').then(function(a) {
+				this.$.get('/api/tejia.json').then(function(a) {
 					this.Tejia = a.data;
 					console.log(a.data)
 				}.bind(this))
