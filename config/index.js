@@ -89,7 +89,7 @@ module.exports = {
 		bundleAnalyzerReport: process.env.npm_config_report,
 		proxyTable: {
 			'/api': {
-				target: 'https://johnswubo.github.io/maimai/dist/',
+				target: 'http://127.0.0.1:8020/',
 				changeOrigin: true,
 				pathRewrite: {
 					'^/api': '/'
