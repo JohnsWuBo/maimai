@@ -5,9 +5,9 @@
 </template>
 
 <script>
-	import feilei from '../static/feilei.json'
-	import tejia from '../static/tejia.json'
-	import paF from '../static/paF.json'
+	import feilei from './../static/feilei.json'
+	import tejia from './../static/tejia.json'
+	import paF from './../static/paF.json'
 	export default {
 		data: function() {
 			return {
