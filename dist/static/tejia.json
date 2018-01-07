@@ -1,0 +1,60 @@
+{
+	"tejia" : [
+		{
+			"name" : "康师傅 开心桶红烧牛肉面 108g 方便面 速食",
+			"moneyNew" : 3.9,
+			"moneyOld" : 6.20,
+			"polpe" : 2105,
+			"img": "tjimg1.jpg"
+		},
+		{
+			"name" : "张君雅小妹妹酱烧虾拉面饼进口零食 65g",
+			"moneyNew": 8.5,
+			"moneyOld" : 10.0,
+			"polpe" : 1564,
+			"img" : "tjimg2.jpg"
+		},
+		{
+			"name" : "屈臣氏汤力汽水330ml/罐 苏打水碳酸饮料",
+			"moneyNew": 4.20,
+			"moneyOld" : 5.00,
+			"polpe" : 1655,
+			"img" : "tjimg3.jpg"
+		},
+		{
+			"name" : "牛栏山陈酿白牛二白酒单瓶整箱42度 500ml*12/箱",
+			"moneyNew": 14.1,
+			"moneyOld" : 18.7,
+			"polpe" : 1822,
+			"img" : "tjimg4.jpg"
+		},
+		{
+			"name" : "露露杏仁露原味一罐整箱 植物蛋白饮料240ml*24/箱",
+			"moneyNew": 78,
+			"moneyOld" : 90,
+			"polpe" : 2105,
+			"img" : "tjimg5.jpg"
+		},
+		{
+			"name" : "维维维他型豆奶粉460g早餐速溶食品",
+			"moneyNew": 13.9,
+			"moneyOld" : 19.00,
+			"polpe" : 1860,
+			"img" : "tjimg6.jpg"
+		},
+		{
+			"name" : "双汇火腿肠弹脆香脆肠 原味 150g",
+			"moneyNew": 5.7,
+			"moneyOld" : 8.10,
+			"polpe" : 2310,
+			"img" : "tjimg7.jpg"
+		},
+		{
+			"name" : "三全上海风味菜肉馄饨500g（40只）速冻食品",
+			"moneyNew": 13.8,
+			"moneyOld" : 20.00,
+			"polpe" : 1315,
+			"img" : "tjimg8.jpg"
+		}
+	]
+}
