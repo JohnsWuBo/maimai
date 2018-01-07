@@ -41,7 +41,7 @@
 								<li v-for='(ar,index) in arr.kuai'>
 									<dl>
 										<dt>
-											<img :src='"./../../src/assets/img/F/"+ar.img.substr(0,1)+"F/"+ar.img'/>
+											<img :src='"./static/assets/img/F/"+ar.img.substr(0,1)+"F/"+ar.img'/>
 											<i>{{index+1}}</i>
 										</dt>
 										<dd>{{ar.textCont}}</dd>
@@ -63,7 +63,7 @@
 								<li>
 									<dl>
 										<dt>
-											<img :src='"../../src/assets/img/F/"+item.img.substr(0,1)+"F/"+item.img'/>
+											<img :src='"./static/assets/img/F/"+item.img.substr(0,1)+"F/"+item.img'/>
 											<i>1</i>
 										</dt>
 										<dd>{{item.textCont}}</dd>
@@ -81,18 +81,18 @@
 						<div class="left">
 							<!-- 放大镜的小图 -->
 							<div class='smallImg'>
-								<img :src='"../../src/assets/img/F/"+item.img.substr(0,1)+"F/"+item.img'/>
+								<img :src='"./static/assets/img/F/"+item.img.substr(0,1)+"F/"+item.img'/>
 								<!-- 遮罩 -->
 								<div class='shopsMask'></div>
 								<div class='bigImg'>
-									<img :src='"../../src/assets/img/F/"+item.img.substr(0,1)+"F/"+item.img'/>
+									<img :src='"./static/assets/img/F/"+item.img.substr(0,1)+"F/"+item.img'/>
 								</div>
 							</div>
 							<!-- 查看项 -->
 							<div class='cha'>
 								<div class='btn1'></div>
 								<div class='imgT'>
-									<img :src='"../../src/assets/img/F/"+item.img.substr(0,1)+"F/"+item.img'/>
+									<img :src='"./static/assets/img/F/"+item.img.substr(0,1)+"F/"+item.img'/>
 								</div>
 								<div class='btn2'></div>
 							</div>
@@ -675,6 +675,9 @@ export default {
 	}
 	.shop-xs>.neirong>.right>.top>.right>h3{
 		height:45px;
+		overflow: hidden;
+		text-overflow:ellipsis;
+		white-space: nowrap;
 		border-bottom:1px dashed #DDDDDD;
 		width:100%;
 		line-height:45px;

@@ -13,7 +13,7 @@
 			<ul class="bottom">
 
 				<li v-for='(item1,index) in x.fenlei' :key='index' v-show='item1.yiShu'>
-					<kuai :width='300' :height='355' style='border:1px solid #ebebeb;float:left;' v-for='item2 in item1.kuai' :textCont='item2.textCont' :moneyNew='item2.moneyNew' :moneyOld='item2.moneyOld' :img='"../src/assets/img/F/"+x.index + "F/"+item2.img' @kuaiD='kuaiD(item2,item1,x.fenlei)'></kuai>
+					<kuai :width='300' :height='355' style='border:1px solid #ebebeb;float:left;' v-for='(item2,index) in item1.kuai' :textCont='item2.textCont' :moneyNew='item2.moneyNew' :moneyOld='item2.moneyOld' :img='"../src/assets/img/F/"+x.index + "F/"+item2.img' @kuaiD='kuaiD(item2,item1,x.fenlei)' :key='index'></kuai>
 				</li>
 			</ul>
 		</div>

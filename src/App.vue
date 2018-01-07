@@ -1,19 +1,22 @@
 <template>
 	<div id="app">
-		<router-view :Datas='Datas' :Tejia='Tejia' :Palou='Palou'/>
+		<router-view :Datas='Datas' :Tejia='Tejia' :Palou='Palou' />
 	</div>
 </template>
 
 <script>
+	import feilei from '../static/feilei.json'
+	import tejia from '../static/tejia.json'
+	import paF from '../static/paF.json'
 	export default {
 		data: function() {
 			return {
 				//导航数据
 				Datas: {},
 				//特价
-				Tejia : {},
+				Tejia: {},
 				//爬楼
-				Palou : {}
+				Palou: {}
 			}
 		},
 		created() {
@@ -24,34 +27,31 @@
 		methods: {
 			//导航请求
 			_shuju() {
-				this.$.get('./../static/feilei.json').then(function(a) {
-					this.Datas = a.data;
-				}.bind(this))
+
+				this.Datas = feilei;
 			},
 			//特价请求
-			_tejia(){
-				this.$.get('./../static/tejia.json').then(function(a) {
-					this.Tejia = a.data;
-					console.log(a.data)
-				}.bind(this))
+			_tejia() {
+
+				this.Tejia = tejia;
+
 			},
 			//楼层请求
-			_palou(){
-				this.$.get('./../static/paF.json').then(function(a){
-					this.Palou = a.data;
-					this.Palou.pailou.forEach((v) => {
-						v.fenlei.forEach((a,index) => {
-							this.$set(a,'yiShu',false)
-							this.$set(a,'bgcor',index)
-						});
-						v.fenlei[0].yiShu = true;
-						v.fenlei[0].bgcor = 0;
-						this.$set(v,"imgPj",false)
+			_palou() {
+
+				this.Palou = paF;
+				this.Palou.pailou.forEach((v) => {
+					v.fenlei.forEach((a, index) => {
+						this.$set(a, 'yiShu', false)
+						this.$set(a, 'bgcor', index)
 					});
-				}.bind(this))
+					v.fenlei[0].yiShu = true;
+					v.fenlei[0].bgcor = 0;
+					this.$set(v, "imgPj", false)
+				});
 			}
 		},
-		
+
 	}
 </script>
 
@@ -77,14 +77,17 @@
 	h1,
 	h2,
 	h3,
-	h4{
+	h4 {
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
 	}
-	html,body{
-		width:100%;
+	
+	html,
+	body {
+		width: 100%;
 	}
+	
 	input {
 		outline: none;
 		border: none;

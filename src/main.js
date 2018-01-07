@@ -38,7 +38,7 @@ Vue.filter('w',function(v){
 })
 
 Vue.prototype.$ = axios
-axios.defaults.baseURL = '/api'
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
