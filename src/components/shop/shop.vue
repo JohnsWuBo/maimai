@@ -159,7 +159,7 @@
 												<div class='smallKu_xs'>
 													<ul style="width:100%;">
 														<li>
-															<img :src='"../../src/assets/img/F/"+item.img.substr(0,1)+"F/"+item.img' style="width:50px;height:50px;float:left;"/>
+															<img :src='"./static/assets/img/F/"+item.img.substr(0,1)+"F/"+item.img' style="width:50px;height:50px;float:left;"/>
 														</li>
 														<li>
 															<div class='itemName'>{{item.textCont}}</div>
