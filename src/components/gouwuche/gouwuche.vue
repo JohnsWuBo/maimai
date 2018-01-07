@@ -30,7 +30,7 @@
 							YLKKKL0011-A1250
 						</td>
 						<td>
-							<img :src='"../../src/assets/img/F/"+arr.add.img.substr(0,1)+"F/"+arr.add.img' />
+							<img :src='"./static/assets/img/F/"+arr.add.img.substr(0,1)+"F/"+arr.add.img' />
 							<span>{{arr.add.textCont}}</span>
 						</td>
 						<td style="color:#d7261c">￥{{arr.add.moneyNew}}</td>
