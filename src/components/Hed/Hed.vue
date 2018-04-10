@@ -16,6 +16,7 @@
 				<!-- 欢迎页头右 -->
 				<div class="right">
 					<ul class='left'>
+						1111
 						<li>汇多买首页</li>
 						<li class='gang'>|</li>
 						<li>配送范围</li>
